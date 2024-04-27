@@ -1,0 +1,177 @@
+:root {
+    --inter: "Inter", sans-serif;
+    --main_color: #1C5550;
+    --pink: #DFD9D9;
+    --cart: #C3B97F;
+    --side_text: #91B599;
+    --cards_title: 24px;
+}
+
+.main_container {
+    width: min(100%, 1440px);
+    margin: auto;
+    padding: 32px 20px;
+    background-color: var(--main_color);
+    display: grid;
+    gap: 48px 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 48px 146px 146px 284px;
+    grid-template-areas:
+        "HEADER HEADER HEADER HEADER"
+        "ASIDE COVER COVER PHOTO1"
+        "ASIDE COVER COVER PHOTO2"
+        "CARD1 CARD2 CARD3 CARD4"
+    ;
+}
+
+/* header  */
+
+header {
+    grid-area: HEADER;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    column-gap: 84px;
+}
+
+li a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    color: var(--pink);
+}
+
+.user_div {
+    display: flex;
+    column-gap: 32px;
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 20px;
+    column-gap: 100px;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.searchP {
+    font-family: var(--inter);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    color: var(--side_text);
+}
+
+/* aside  */
+
+aside {
+    grid-area: ASIDE;
+    background-color: red;
+}
+
+/* cover  */
+
+.cover_section {
+    grid-area: COVER;
+    background-image: url("../images/Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-content: end;
+}
+
+.cover_price {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--pink);
+}
+
+/* side pictures */
+
+.photo_div1 {
+    grid-area: PHOTO1;
+    background-image: url("../images/Frame\ 26.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.photo_div2 {
+    grid-area: PHOTO2;
+    background-image: url("../images/Frame\ 27.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* article  */
+
+.card1 {
+    grid-area: CARD1;
+}
+
+.card2 {
+    grid-area: CARD2;
+}
+
+.card3 {
+    grid-area: CARD3;
+}
+
+.card4 {
+    grid-area: CARD4;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_pic {
+    height: 180px;
+    background-image: url("../images/rectangle.png");
+    background-repeat: no-repeat;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.card_pic2 {
+    height: 180px;
+    background-image: url("../images/Rectangle\ 15.png");
+    background-repeat: no-repeat;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+h2 {
+    font-family: var(--inter);
+    font-size: var(--cards_title);
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--main_color);
+}
+
+.card_text {
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--pink);
+}
+
+.card_divs {
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--pink);
+}
