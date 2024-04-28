@@ -5,6 +5,7 @@
     --cart_button: #C3B97F;
     --side_text: #91B599;
     --cards_title: 24px;
+    --border_size: 4px;
 }
 
 .main_container {
@@ -65,7 +66,7 @@ li a {
     padding: 8px 20px;
     column-gap: 100px;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: var(--border_size);
     box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.2) inset,
         0px -0.3px 1px 0px rgba(223, 217, 217, 0.4) inset;
     ;
@@ -83,7 +84,7 @@ li a {
 .icons {
     padding: 4px;
     border: none;
-    border-radius: 4px;
+    border-radius: var(--border_size);
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.4) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     transition: all .2s;
@@ -177,7 +178,7 @@ h3 {
 .cover_button:hover,
 .cart_button:hover {
     background-color: #b9a537;
-    border-radius: 5px;
+    border-radius: var(--border_size);
     transform: scale(1.01);
 }
 
